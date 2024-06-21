@@ -154,6 +154,8 @@ $(document).ready(function () {
                         alert("Произошла ошибка, позвоните нам самостоятельно");
                         nameInput.val('');
                         phoneInput.val('');
+                        checkboxInput.prop('checked', false); //сбросить чекбокс
+                        $('#checkbox svg').css('display', 'none'); // Скрываем SVG галочек
                     }
                 });
         } else {
